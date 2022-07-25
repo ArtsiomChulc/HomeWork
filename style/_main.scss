@@ -157,6 +157,11 @@
             top: 190px;
             transform: translateX(340px);
         }
+        @media (max-width: 412.8px) {
+            top: 90px;
+            left: -100px;
+            transform: translateX(340px);
+        }
         &:after {
             content: '';
             width: 50px;

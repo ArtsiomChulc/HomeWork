@@ -88,6 +88,10 @@
         position: absolute;
         bottom: -40px;
         right: 0;
+        @media (max-width: 412.8px) {
+            bottom: -65px;
+            right: 120px;
+        }
     }
 
 		// .descript-slider__arrow1 and .descript-slider__arrow2

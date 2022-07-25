@@ -418,6 +418,16 @@ h6 {
   }
 }
 
+@media (max-width: 412.8px) {
+  .block2__diameter {
+    top: 90px;
+    left: -100px;
+    -webkit-transform: translateX(340px);
+        -ms-transform: translateX(340px);
+            transform: translateX(340px);
+  }
+}
+
 .block2__diameter:after {
   content: '';
   width: 50px;
@@ -663,6 +673,13 @@ h6 {
   position: absolute;
   bottom: -40px;
   right: 0;
+}
+
+@media (max-width: 412.8px) {
+  .descript-slider__switchers {
+    bottom: -65px;
+    right: 120px;
+  }
 }
 
 .descript-slider__arrow1, .descript-slider__arrow2 {
