@@ -82,6 +82,12 @@ h6 {
   }
 }
 
+@media (max-width: 412.8px) {
+  [class*="__container"] {
+    max-width: 480px;
+  }
+}
+
 [class*="__containersmall"] {
   max-width: 980px;
   margin: 0 auto;
@@ -842,6 +848,7 @@ h6 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 79px 0 67px;
+  gap: 35px;
 }
 
 .footer__tel {

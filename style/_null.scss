@@ -79,6 +79,11 @@ h6 {
     max-width: 1020px;
   }
 }
+@media (max-width: 412.8px) {
+  [class*="__container"] {
+    max-width: 480px;
+  }
+}
 
 
 [class*="__containersmall"] {
