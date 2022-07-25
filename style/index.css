@@ -85,6 +85,7 @@ h6 {
 @media (max-width: 412.8px) {
   [class*="__container"] {
     max-width: 480px;
+    margin: 0 auto;
   }
 }
 
