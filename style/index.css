@@ -111,6 +111,7 @@ h6 {
 
 .header__menu {
   max-width: 422px;
+  position: relative;
 }
 
 .header__list {
@@ -126,7 +127,7 @@ h6 {
 @media (max-width: 991.8px) {
   .header__list {
     position: absolute;
-    top: 0;
+    top: -10px;
     left: 20%;
     background: #3c3b3bf0;
     -webkit-box-orient: vertical;
@@ -192,10 +193,10 @@ h6 {
   .menu-burger {
     display: block;
     position: absolute;
-    top: 0;
+    top: -10px;
     left: 50%;
     z-index: 100;
-    background: #d6d4d4;
+    background: #f9f7f7;
   }
 }
 
@@ -399,7 +400,7 @@ h6 {
   line-height: 22px;
   color: #1B1A17;
   bottom: 140px;
-  right: -60px;
+  right: -5%;
 }
 
 @media (max-width: 1188.8px) {

@@ -18,8 +18,7 @@
 
     &__menu {
         max-width: 422px;
-        
-        
+        position: relative;
     }
 
     // .header__list
@@ -30,7 +29,7 @@
         transition: all .4s ease;
         @media (max-width: 991.8px) {
             position: absolute;
-            top: 0;
+            top: -10px;
             left: 20%;
             background: #3c3b3bf0;
             flex-direction: column;
@@ -89,10 +88,10 @@
     @media (max-width: 991.8px) {
         display: block;
         position: absolute;
-        top: 0;
+        top: -10px;
         left: 50%;
         z-index: 100;
-        background: rgb(214, 212, 212);
+        background: rgb(249, 247, 247);
     }
 
     &.active::before {
