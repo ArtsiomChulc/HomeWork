@@ -1,0 +1,92 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+html,
+body {
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-weight: 700;
+}
+
+html {
+  font-size: 16px;
+  /* по умолчанию */
+}
+
+body {
+  line-height: 1;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  background: #FDFDFB;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+[class*="__container"] {
+  max-width: 1201px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media (max-width: 991.8px) {
+  [class*="__container"] {
+    max-width: 880px;
+  }
+  body {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1188.8px) {
+  [class*="__container"] {
+    max-width: 1020px;
+  }
+}
+
+
+[class*="__containersmall"] {
+  max-width: 980px;
+  margin: 0 auto;
+}
+@media (max-width: 991.8px) {
+  [class*="__containersmall"] {
+    max-width: 590px;
+  }
+}

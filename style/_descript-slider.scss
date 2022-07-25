@@ -1,0 +1,146 @@
+@import "base/mixins.scss";
+
+
+.descript-slider__button {
+    @include btn(205px, 500, 12px, 14px, 0.05em, uppercase, #fff, 25px 38px);
+    background: #D4B098;
+    position: relative;
+    z-index: 1;
+    &.descript-slider__button::before {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #000;
+        transition: all .3s ease;
+        opacity: .3;
+        }
+        &.descript-slider__button:hover::before {
+            width: 100%;
+    }
+}
+
+.descript-slider {
+    background: url('../img/desc-slider/lines_banner.svg') right top no-repeat;
+    margin: 0px 0px 81px 0px;
+    position: relative;
+    
+    // .descript-slider__flex
+
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        flex: 0 1 50%;
+        flex-wrap: wrap;
+        padding: 52px 0px 0px 0px;
+        
+    }
+
+    // .descript-slider__img
+
+    &__img {
+        width: 521px;
+        height: 464px;
+        padding: 0px 15px 15px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 0;
+        position: relative;
+    }
+
+    &__opacity0 {
+        opacity: 0;
+    }
+
+    &__bc {
+        position: absolute;
+        width: 90%;
+        height: 122%;
+        top: -11.5%;
+        left: -50%;
+        background: #F7F5EF;        
+        z-index: -1;
+    }
+
+    // .descript-slider__image
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 1;
+        position: absolute;
+        top: 0;
+        left: 0;        
+        &.opacity0 {
+            opacity: 0;
+        }
+    }
+
+    &__switchers {
+        margin: 20px 0px 0px 0px;
+        align-self: flex-end;
+        padding: 0px 40px 0px 0px;
+        position: absolute;
+        bottom: -40px;
+        right: 0;
+    }
+
+		// .descript-slider__arrow1 and .descript-slider__arrow2
+
+		&__arrow1,
+        &__arrow2 {
+            color: #1B1A17;
+            width: 5px;
+            height: 10px;
+            padding: 0 12px;
+            cursor: pointer;
+		}
+
+		// .descript-slider__switcher
+
+		&__switcher,
+        &__arrow1,
+        &__arrow2 {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 16px;
+            color: rgba(27, 26, 23, 0.82);
+		}
+
+
+    // .descript-slider__text
+
+    &__text {
+        max-width: 376px;
+    }
+
+    // .descript-slider__title
+
+    &__title {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 43px;
+        color: #1B1A17;
+        margin: 0px 0px 38px 0px;
+        
+    }
+
+    // .descript-slider__subtitle
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #444240;
+        margin: 0px 0px 70px 0px;
+        
+    }
+
+    // .descript-slider__button
+
+}

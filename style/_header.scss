@@ -1,0 +1,138 @@
+.header {
+
+    // .header__wrapper
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 1.9em 0.5em;
+    }
+
+    // .header__logo
+
+
+    // .header__menu
+
+    &__menu {
+        max-width: 422px;
+        
+        
+    }
+
+    // .header__list
+
+    &__list {
+        display: flex;
+        gap: 4em;
+        transition: all .4s ease;
+        @media (max-width: 991.8px) {
+            position: absolute;
+            top: 0;
+            left: 20%;
+            background: #3c3b3bf0;
+            flex-direction: column;
+            // width: 460px;
+            z-index: 20;
+            transform: translateY(-120%);
+        }
+        &.active {
+            transform: translateY(0);
+        }
+    }
+
+    // .header__item
+
+    &__item {
+        @media (max-width: 991.8px) {
+            padding: 1.9em 9.5em;
+        }
+    }
+
+    // .header__link
+
+    &__link {
+        font-size: 14px;
+        line-height: 16px;
+        color: #555248;
+        @media (max-width: 991.8px) {
+            color: #fff;
+        }
+    }
+
+    // .header__icon
+
+    &__icon {
+        // display: flex;
+        // gap: 23px;
+        // flex-wrap: nowrap;
+        padding: 0px 1.9em 0px 0px;
+        @media (max-width: 991.8px) {
+            padding: 0px 3.9em 0px 0px;
+        }
+        & a {
+            padding: 0px 0px 0px 2em;
+            font-size: 12px;
+        }
+    }
+}
+.menu-burger {
+    position: relative;
+    width: 40px;
+    height: 25px;
+    display: none;
+    top: 0;
+    right: 80px;  
+      
+    @media (max-width: 991.8px) {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: 100;
+        background: white;
+    }
+
+    &.active::before {
+        transform: rotate(45deg);
+        bottom: 0.8em;
+    }
+    &.active::after {
+        transform: rotate(-45deg);
+        top: 0.8em;
+    }
+    &.active span {
+        transform: scale(0);
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        width: 2.5em;
+        height: 2px;
+        left: 0;
+        background-color: #3c3b3b;
+        transition: all .4s ease;
+    }
+    &::after {
+        top: 0;
+    }
+    &::before {
+        bottom: 0;
+    }
+    & span {
+        position: absolute;
+        width: 35px;
+        height: 2px;
+        background-color: #3c3b3b;
+        left: 0;
+        top: 11px;
+        transition: all .4s ease;
+    }
+
+
+
+}

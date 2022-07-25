@@ -1,0 +1,10 @@
+@mixin btn($w, $fw, $fz, $lh, $ls, $tt, $col, $pad...) {
+    width: $w;
+    font-weight: $fw;
+    font-size:  $fz;
+    line-height: $lh;
+    letter-spacing: $ls;
+    text-transform: $tt;
+    color: $col;
+    padding: $pad;
+}

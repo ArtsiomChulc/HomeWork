@@ -1,0 +1,128 @@
+.popular {
+    padding: 0px 20px 86px 0px;
+    background: #FFFFFF;
+    
+
+    // .popular__title
+
+    &__title {
+        padding: 74px 0 35px;
+    }
+
+    // .popular__text
+
+    &__text {
+        text-align: center;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 43px;
+        color: #1B1A17;        
+    }
+
+    // .popular__link
+
+    &__link {
+        display: block;
+        text-align: end;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #444240;
+        &:hover {
+            text-decoration: underline 1px black;
+        }
+        @media (max-width: 1188.8px) {
+            padding: 0px 50px 0px 0px;
+            
+        }
+    }
+}
+.popular {
+
+    // .popular__content
+
+    &__content {
+        background: #FFFFFF;
+    }
+
+    // .popular__desc
+
+    &__desc {
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 30px;       
+    }
+
+    // .popular__card
+
+    &__card {
+        flex: 0 1 370px;
+        padding: 60px 26px;
+        background: #f5f5ef;
+        @media (max-width: 991.8px) {
+            margin: 0 auto;
+        }
+        
+    }
+
+    // .popular__name
+
+    &__name {
+        font-weight: 700;
+        text-align: start;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: rgba(27, 26, 23, 0.82);
+    }
+
+    // .popular__price
+
+    &__price {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: rgba(27, 26, 23, 0.82);
+    }
+
+    // .popular__img
+
+    &__img {
+        overflow: hidden;
+        position: relative;
+        padding: 0px 0px 94% 0px;
+        background: url('../img/popular/Ellipse.svg') 0 0 no-repeat;
+    }
+
+    // .popular__image
+
+    &__image {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    // .popular__detail
+
+    &__detail {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: #1B1A17;
+        padding: 19px 0px 0px 40px;
+        position: relative;
+        &:before {
+            content: '';
+            width: 30px;
+            height: 1px;
+            background-color: #1B1A17;
+            position: absolute;
+            top: 75%;
+            left: 0;
+            display: inline-block;
+        }
+    }
+}

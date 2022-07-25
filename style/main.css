@@ -1,0 +1,259 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+html,
+body {
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-weight: 700;
+}
+
+html {
+  font-size: 16px;
+  /* по умолчанию */
+}
+
+body {
+  line-height: 1;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  background: #FDFDFB;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+[class*="__container"] {
+  max-width: 1390px;
+  margin: 0 auto;
+}
+
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+.header__menu {
+  max-width: 422px;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 65px;
+}
+
+.header__link {
+  font-size: 14px;
+  line-height: 16px;
+  color: #555248;
+}
+
+.header__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 23px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.main__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40%;
+          flex: 0 1 40%;
+  background: url("../img/bcg/header/ellipse.svg") 56% 0 no-repeat;
+}
+
+.main__block1 {
+  margin: 236px 0px 0px 0px;
+  padding: 0px 0px 0px 87px;
+}
+
+.main__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 60px;
+  color: #1B1A17;
+  margin: 0px 0px 16px 0px;
+  position: relative;
+}
+
+.main__title::before {
+  content: '';
+  width: 14%;
+  height: 1px;
+  background: #8B8371;
+  display: inline;
+  top: 54%;
+  left: -20%;
+  position: absolute;
+}
+
+.main__subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  color: #1B1A17;
+  margin: 0px 0px 39px 0px;
+}
+
+.main__descript {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(27, 26, 23, 0.82);
+  margin: 0px 0px 52px 0px;
+  max-width: 255px;
+}
+
+.main__button {
+  background: #444240;
+  display: block;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.main__button:hover {
+  background: #67635e;
+}
+
+.button {
+  width: 205px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 25px 38px;
+}
+
+.block2__price {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1B1A17;
+  position: absolute;
+  top: 140px;
+  left: -60px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.block2__price:after {
+  content: '';
+  width: 50px;
+  height: 1px;
+  background: #8B8371;
+  display: inline-block;
+  top: 10px;
+  position: absolute;
+  right: -60px;
+}
+
+.block2__img {
+  position: relative;
+}
+
+.block2__picture {
+  min-height: 200px;
+}
+
+.block2__image {
+  max-width: 100%;
+}
+
+.block2__diameter {
+  position: absolute;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1B1A17;
+  bottom: 140px;
+  right: -60px;
+}
+
+.block2__diameter:after {
+  content: '';
+  width: 50px;
+  height: 1px;
+  background: #8B8371;
+  display: inline-block;
+  top: 10px;
+  position: absolute;
+  left: -60px;
+}
+
+.fa-solid {
+  width: 10px;
+}
+
+.fa-ruble-sign {
+  width: 10px;
+}
